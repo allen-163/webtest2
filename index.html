@@ -1,20 +1,4 @@
 <HTML>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-
-<div id="input_20160628">
-  <label>抽出數量: <input type="number" name="number" value="10" /></label>
-  <label><input type="checkbox" name="repeatable" /> 允許重複資料 </label>
-  <div><textarea></textarea></div>
-  <div class="div-button">
-    <button type="button" class="default">插入預設資料</button>
-    <button type="button" class="draw">抽籤</button>
-  </div>
-</div>
-<div id="result_20160628"></div>
-<div style="clear:both"></div>
-
-
-
 <HEAD>
 <TITLE>我的第一個網 頁!!</TITLE>
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
@@ -24,90 +8,46 @@
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
       integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
       crossorigin="anonymous"/>
-</HEAD>
-
+</HEAD>	
+	
 <style>
-	.box {
-    		border-radius: 5px;
-    		background-color: #eee;
-   		padding: 15px 5px;
-  	}
-	.big_text{
-		font-size: 30px;
-	}
-	 .red_h {
-   	 	color:red ;
- 	 }
-	.orange_h{
-   	 	color:orange;
- 	 }
-	p{
-	  font-size: 15px;
-		color:gray;
-	}
-	.mid_text{
-		font-size: 25px;
-	}
-	.larger-image {
-    		width: 500px;
-  	}
-	.thin-pink-border {
-    	border-color: pink;
-    	border-width: 5px;
-    	border-style: solid;
-  	}
-	.small-text{
-		font-size: 10px;	
-	}
-	.verysmall-image {
-    		width: 20px;
-  	}
+	
+	
+	
 </style>
+	
 <script>
 	
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	
 </script>
-
+	
 <BODY>
-<h1 class="red_h big_text "><a href="index.html">allen-163的部落格</a></h1>
-	<p>第一次做網頁^_^有興趣的話可以到我的 <a href="https://sls.weco.net/blog/153315">宅學習</a>看看~</p>
-<div class="row">
-<ul>
-        <div class="col-xs-4">
-		<li class="small-text"><a href="index.html">首頁</a></li>
-		</div>
-	<div class="col-xs-4">
-		<li class="small-text"><a href="https://sls.weco.net/blog/153315">前往宅學習</a></li>
-		</div>
-	<div class="col-xs-4">
-		<li class="small-text"><a href="https://www.facebook.com/groups/137944869554367/">WECO - Web Fundamentals</a></li>
-		</div>
-</ul>
-</div>
-<hr />
-	
-<h2 class="orange_h big_text">介紹<img class="verysmall-image" src="https://i.imgur.com/PWJlYyU.jpg" alt="ball picture." id="ball"></h2>
-<br>
-<button id="move-ball" class="small-text">開啟動畫(球)</button>
-<button id="stop-move-ball" class="small-text">關閉動畫(球)</button>
-<hr />
-<div style="background-color:pink">
-<p id="introduction">我是十二月二十五日生的魔羯座，<a href="#contacts1">興趣</a>是看小說，玩遊戲，看電影，喜歡的<a href="#contacts2">運動</a>是游泳，打羽球</p>
-</div>
-<hr />
-<h3 class="mid_text orange_h " id="contacts1">我的興趣</h3>
-<ul>
-  	<li>最近我看了一部電影叫做<a href="https://movies.yahoo.com.tw/movieinfo_main.html/id=10433">"天能(TENET)"</a>，裡面時間線變動的劇情讓我感覺非常新鮮</li>
-  	<li>我最喜歡的遊戲是<a href="https://lol.garena.tw/">"英雄聯盟"</a>,新版的卡瑪加強讓我感到很開心</li>
-  	<li>最喜歡的小說是<a href="https://www.google.com/search?q=%E7%8E%A9%E5%AE%B6%E8%B6%85%E6%AD%A3%E7%BE%A9&rlz=1C1CHBF_zh-TWTW919TW919&oq=%E7%8E%A9%E5%AE%B6%E8%B6%85%E6%AD%A3%E7%BE%A9&aqs=chrome..69i57j0l7.743j0j7&sourceid=chrome&ie=UTF-8">"玩家超正義"</a>，我每天都會期待他的更新</li>
-	<a href="https://movies.yahoo.com.tw/movieinfo_main.html/id=10433" id="tenet_picture"><img class="larger-image thin-pink-border" src="https://i.imgur.com/anItuly.jpg" alt="tennet picture."></a>
-	<a href="https://lol.garena.tw/" id="lol_picture"><img class="larger-image thin-pink-border" src="https://i.imgur.com/Hj0sxRs.jpg"></a>
-	
-</ul>
-<h4 class="mid_text orange_h" id="contacts2">喜歡的運動</h4>
-<p>游泳，打羽球</p>
-	<img class="larger-image thin-pink-border" src="https://i.imgur.com/gn4nw2d.jpg"  alt="swimming" />
-<p class="box"> 游泳和羽球真的是十分適合宅宅的一項運動啊~~相比起其他像籃球或跑步之類的，輕鬆了許多，尤其是在夏天的時候游泳，身上不會有那種流汗黏黏的感覺<br/>哈哈哈~討厭泳池裡消毒水的人例外拉XD</p>
+
+<div id="input_20160628">
+	<label>抽出數量: <input type="number" name="number" value="10" /></label>
+ 	<label><input type="checkbox" name="repeatable" /> 允許重複資料 </label>
+ 	<div><textarea></textarea></div>
+  		<div class="div-button">
+    			<button type="button" class="default">插入預設資料</button>
+    			<button type="button" class="draw">抽籤</button>
+  		</div>
+	</div>
+	<div id="result_20160628"></div>
+	<div style="clear:both"></div>
 	
 </BODY>
 
 </HTML>
+
+	
+
+
+
+
+
+
+
+
+	
+
